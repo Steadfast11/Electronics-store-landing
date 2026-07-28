@@ -1,0 +1,338 @@
+/* =====================================================================
+   VOLTIX — media.css   (1200 / 992 / 768 / 420)
+   ===================================================================== */
+
+/* ---------------- 1200px ---------------- */
+@media (max-width: 1200px) {
+    .slide {
+        min-height: 340px;
+        padding: 40px 40px 52px;
+    }
+
+    .slide__title {
+        font-size: 42px;
+    }
+
+    .hero__dots {
+        left: 40px;
+    }
+
+    .action__label {
+        display: none;
+    }
+
+    .footer__top {
+        grid-template-columns: 1fr 1fr 1fr 1.3fr;
+    }
+
+    .footer__brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer__about {
+        max-width: 100%;
+    }
+}
+
+/* ---------------- 992px ---------------- */
+@media (max-width: 992px) {
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .usp__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .slide__title {
+        font-size: 36px;
+    }
+
+    .slide__media {
+        flex: 1 1 44%;
+    }
+
+    .section {
+        padding: 44px 0;
+    }
+
+    .pmodal {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .pmodal__img {
+        flex: none;
+        height: 220px;
+    }
+}
+
+/* ---------------- 768px (мобильный, макет 390px) ---------------- */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    /* шапка: бургер | лого | иконки  +  поиск снизу */
+    .header__inner {
+        flex-wrap: wrap;
+        gap: 10px;
+        height: auto;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .burger {
+        display: flex;
+        order: 1;
+    }
+
+    .logo {
+        order: 2;
+        margin-right: auto;
+    }
+
+    .header__actions {
+        order: 3;
+    }
+
+    .search {
+        order: 4;
+        flex: 1 0 100%;
+    }
+
+    .btn--catalog {
+        display: none;
+    }
+
+    .action {
+        padding: 6px 8px;
+    }
+
+    /* hero вертикально */
+    .hero {
+        padding: 16px 0 0;
+    }
+
+    .hero__skeleton {
+        height: 340px;
+    }
+
+    .slide {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        min-height: 0;
+        padding: 20px 20px 48px;
+    }
+
+    .slide__media {
+        order: -1;
+        flex: none;
+        min-height: 0;
+        height: 180px;
+    }
+
+    .slide__title {
+        font-size: 30px;
+    }
+
+    .slide__desc {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    .slide__btns {
+        flex-direction: column;
+    }
+
+    .slide__btns .btn {
+        width: 100%;
+    }
+
+    .hero__dots {
+        left: 50%;
+        bottom: 18px;
+        transform: translateX(-50%);
+    }
+
+    /* блоки */
+    .usp__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .usp__item {
+        padding: 12px 14px;
+        gap: 10px;
+    }
+
+    .usp__item b {
+        font-size: 13px;
+    }
+
+    .usp__item span {
+        font-size: 11px;
+    }
+
+    .cats,
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .cat {
+        padding: 12px;
+    }
+
+    .cat__img {
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .cat__name {
+        font-size: 14px;
+    }
+
+    .cat__count,
+    .cat__more {
+        font-size: 12px;
+    }
+
+    .card__media {
+        height: 140px;
+    }
+
+    .section {
+        padding: 32px 0;
+    }
+
+    .section__title {
+        font-size: 22px;
+    }
+
+    .btn--outline {
+        width: 100%;
+    }
+
+    /* аккордеон в футере */
+    .footer {
+        padding-top: 36px;
+    }
+
+    .footer__top {
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding-bottom: 24px;
+    }
+
+    .footer__brand {
+        padding-bottom: 22px;
+    }
+
+    .footer__col {
+        border-top: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    .footer__title {
+        margin: 0;
+    }
+
+    .footer__title button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+        cursor: pointer;
+    }
+
+    .footer__title button::after {
+        content: "+";
+        font-size: 20px;
+        font-weight: 400;
+        color: #8e97a3;
+    }
+
+    .footer__col.is-open .footer__title button::after {
+        content: "–";
+    }
+
+    .footer__col ul,
+    .footer__panel {
+        display: none;
+        padding-bottom: 16px;
+    }
+
+    .footer__col.is-open ul,
+    .footer__col.is-open .footer__panel {
+        display: block;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .footer__legal {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    /* drawer / modal */
+    .drawer {
+        width: 100%;
+    }
+
+    .modal {
+        padding: 12px;
+        align-items: flex-end;
+    }
+
+    .modal__box {
+        padding: 22px 18px;
+        border-radius: 18px 18px 0 0;
+        max-width: 100%;
+    }
+}
+
+/* ---------------- 420px ---------------- */
+@media (max-width: 420px) {
+    .slide__title {
+        font-size: 26px;
+    }
+
+    .products,
+    .cats {
+        gap: 10px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .card__media {
+        height: 118px;
+    }
+
+    .card__name {
+        font-size: 13px;
+    }
+
+    .card__price {
+        font-size: 17px;
+    }
+
+    .card__buy {
+        width: 36px;
+        height: 36px;
+    }
+
+    .logo__text {
+        font-size: 14px;
+    }
+}
